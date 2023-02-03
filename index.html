@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raycaster</title>
+    <script src="index.js" defer></script>
+    <style>
+        label {
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="game" width="640" height="480"></canvas>
+    <canvas id="screen" width="640" height="480"></canvas>
+    <br>
+    <span>World</span>
+    <br>
+    <label title="Performance Impact: None">Render Size</label><input id="settingsRenderSize" type="range" min="1" value="46" max="46">
+    <label title="Performance Impact: High">Ray Distance</label><input id="settingsRDistance" type="range" min="10" value="200" max="300">
+    <label title="Performance Impact: Low">Ray Gap</label><input id="settingsRGap" type="range" min="1" value="2" max="20">
+    <label title="Performance Impact: High">Ray Collision Steps</label><input id="settingsRColSteps" type="range" min="1" value="5" max="40">
+    <br>
+    <br>
+    <span>Player</span><br>
+    <label>Turn Speed</label><input id="settingsTurnSpeed" type="range" min="1" value="5" max="200">
+    <label>Move Speed</label><input id="settingsMoveSpeed" type="range" min="1" value="2" max="5">
+    <label title="Peformance Impact: High">FOV</label><input id="settingsAngle" type="range" min="4" value="32" max="64">
+    <br>
+    <br>
+    <span>Colors</span>
+    <br>
+    <label>Background Color</label><input id="settingsBGColor" type="color">
+</body>
+</html>
